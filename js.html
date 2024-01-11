@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script type="text/javascript">
+        // alert("welcome to my page");
+        document.write('hey there ! this is Shaziya shaikh')
+        document.write("<br>")
+        var a = 10;
+        var b = 20;
+        var c = a + b;
+        document.write(c)
+        document.write("<br>")
+
+        document.write(typeof (c))
+        document.write("<br>")
+
+        var x;
+        document.write(x)
+        document.write("<br>")
+        var a = null;
+        document.write(a)
+        document.write("<br>")
+        document.write("HEY \"Everyone\"mmmm")
+document.write("<br>")
+        var p = 30;
+        p += p;
+        document.write(p)
+        document.write("<br>")
+
+        marks = 100;
+        if (marks == 100)
+        {
+            document.write("yes")
+        }
+        else{
+            document.write("no")
+        }
+        document.write("<br>")
+
+        a = 30;
+        b = 30;
+        c = a + b;
+        document.write(c)
+        document.write("<br>")
+sum = 10;
+        sum += c;
+        document.write(sum)
+        </script>
+
+        <h2>Enter your choice</h2>
+        <ul>
+            <li>add</li>
+            <li>sub</li>
+            <li>mult</li>
+        </ul>
+        <form >
+            <input type="text" id="choice">
+            <br>
+            <button onclick="myfunc()">Click here</button>
+        </form>
+       
+        <script type="text/javascript">
+            function myfunc(){
+                var choice= document.getElementById("choice").value;
+
+                switch(choice){
+                    case "add": var a = 10;
+                                 var b = 20;
+                                 var c = a + b;
+                                 document.write("addition is", c)
+                                 break;
+
+                    case "sub": var a = 10;
+                                 var b = 20;
+                                 var c = a - b;
+                                 document.write("substraction is", c)
+                                 break; 
+                    case "mult": var a = 10;
+                                 var b = 20;
+                                 var c = a * b;
+                                 document.write("multiplication is", c)
+                                 break;          
+                    default : alert("not a valid input")
+                }
+            }
+<script type="text/javascript">
+            var i = 2 ;
+            var j = 1;
+            while (i <= 20){
+                document.write("2" + "*" + j + "= " + i);
+                i = i + 2;
+                j++;
+                document.write("<br>")
+            }
+
+            var i = 1;
+            do{
+                document.write(i)
+                i= i + 2;
+                document.write("<br>")
+            }
+            while(i <= 20);
+
+            var i;
+            for(i=1; i<=20; i++){
+                document.write(i)
+                // document.write("<br");
+                document.write("<br>");
+            }
+
+            hello();
+            function hello(){
+                document.write("welcome !!")
+            }
+            document.write("<br>")
+
+            var store = sum(10, 30);
+
+            document.write("sum is " + store + "<br>") 
+            function sum(a , b){
+                
+                var add = a + b;
+                return add;
+            }
+            var names = ['shaziya','sonu','sillu'];
+            document.write(names)
+             document.write("<br>")
+            var one = ['hello','hey','bye','tc']
+            var length = one.length;
+            // alert("length");
+            document.write(length);
+            document.write("<br>")
+
+            var name = prompt("what is your name?");
+             
+            if(name!=''){
+                document.write("hello "+ name)
+            } -->
+
+    <!-- <script type="text/javascript">
+    function myfunc(){
+            var confirmation = confirm("do u want to visit this site");
+            if (confirmation == true ){
+                window.open("https://www.youtube.com/");
+                return true;
+            }
+            else{
+                document.write("user doesn't want to visit this site");
+                return false;
+            }
+        }
+     </script>
+     <input type="button" name="" onclick="myfunc()" value="click here"> -->
+
+
+    <!-- </script> -->
+
+
+    <!-- <script type="text/javascript">
+         
+         var one = "Hello";
+         var two = new String("Hello");
+         
+         document.write(one == two)
+         document.write("<br>")
+         document.write(typeof(one))
+         document.write("<br>")
+
+         document.write(typeof(two))
+
+     </script> -->
+
+    <!-- <script type="text/javascript">
+        var a = "hello there, this is shaziya shaikh."
+        var b = "welcome u all."
+        document.write(a.length)
+        document.write("<br>")
+        document.write(a.charAt(9))
+        document.write("<br>")
+        document.write(a.indexOf('s'))
+        document.write("<br>")
+        document.write(a.lastIndexOf('s'))
+        document.write("<br>")
+        document.write(a.replace('there', ''))
+        document.write("<br>")
+        document.write(a.toUpperCase())
+        document.write("<br>")
+        document.write(a.toLocaleLowerCase())
+        document.write("<br>")
+        document.write(a.concat(b))
+    </script> -->
+    <!-- <p>hii</p>
+    <p id="one">welcome u all</p>
+    <p class="two">welcome u all</p>
+<p>hello</p>
+    <script type="text/javascript">
+        // How to access Element by Id
+            var a = document.getElementById("one").innerHTML;
+            document.write(a);
+
+            
+    </script>
+        <script type="text/javascript">
+            // How to access Element by class 
+            var b = document.getElementsByClassName("two")[0].innerHTML;
+            document.write(b);
+        </script>
+            <script type="text/javascript">
+                // How to access Elememt by Tag name
+           var tag = document.getElementsByTagName("p")
+           document.write(tag)
+           console.write(tag)
+           document.write("<br>")
+
+</script>
+          <-- How to access First Element (by using querySelector) -->
+    <!-- <script type="text/javascript">
+       var x = document.querySelector("p").innerHTML;
+       document.write(x)
+</script> -->
+
+    <!-- <p id="one">Shaziya</p>
+<p class="two">Shaikh</p>
+<p class="two">Sonu</p>
+
+<ul><li>shaziya</li>
+    <li>shaikh</li>
+    <li>sonu</li></ul>
+
+<script type="text/javascript">
+    // accessing chilrens of body
+     var child = document.body.children;
+     console.log(child)
+
+    //  creating new element in body
+
+    var para = document.createElement("p");
+    var textNode = document.createTextNode("new paragraph");
+    para.appendChild(textNode);
+    console.log(para);
+    document.body.appendChild(para);
+
+    // accessing first and last child
+
+    var list = document.querySelector("ul")
+    document.write(list);
+
+    console.log(list.firstChild);
+    console.log(list.lastChild);
+
+    //   accessing next siblings
+    var access = one.nextElementSibling.nextElementSibling;
+    console.log(access);
+
+    // accessing parent node
+    console.log(list.parentNode)
+</script> -->
+
+
+
+
+
+    <h1 id="one">salshaiz</h1>
+    <h1 id="two">Love Yourself!</h1>
+    <!-- for accessing one style in one time  -->
+    <script type="text/javascript">
+        document.getElementById("one").style.color = "red";
+
+        //  for accessing multiple style in one time
+        document.getElementById("two").setAttribute("style", "color:red; background-color:black; text-align:center;");
+
+
+        var i;
+        for (i = 1; i <= 10; i++) {
+            document.write(i * 2, "  ");
+        }
+    </script>
+
+    <button onclick="myfunc()">click here</button>
+
+    <script type="text/javascript">
+
+        // document.write(window.location.href);
+        // document.write(window.location.Hostname);
+        function myfunc() {
+            window.location = "https://www.youtube.com/watch?v=ecWxI0_UfAA&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=22"
+        }
+    </script>
+    <div id="divone">
+        div one content is here.
+        <button onclick="myfunc('divone')">one</button>
+    </div>
+    <div id="divtwo">
+        div two content is here.
+        <button onclick="myfunc('divtwo')">two</button>
+    </div>
+    <div id="divthree">
+        div three content is here.
+        <button onclick="myfunc('divthree')">three</button>
+    </div>
+
+    <button onclick="mywholepage()">wholepage</button>
+
+    <script type="text/javascript">
+        function mywholepage() {
+            window.print() = document.body.innerHTML;
+        }
+        function myfunc(paravalue) {
+            var backup = document.body.innerHTML;
+            var divcontent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = divcontent;
+            window.print();
+            document.body.innerHTML = backup;
+
+        }
+    </script>
+
+    <h1>Good morning!</h1>
+    <button onclick="myfunc()">click me</button>
+    <button onmouseenter="myfunc">click me</button>
+    <button onmouseup="myfunc"></button>
+
+    <script>
+        function myfunc() {
+            document.body.style.backgroundColor = 'yellow';
+            document.body.style.color = 'blue';
+        }
+
+        var dateobj = new Date();
+
+        var month = dateobj.getUTCMonth() + 1;
+        var day = dateobj.getUTCDay();
+        var year = dateobj.getFullYear();
+
+        document.write(year + "/" + month + "/" + day);
+
+        var d = new Date();
+        document.write("<br>")
+        //   var month = d.setMonth();
+        var day = d.setDate(20);
+
+        document.write(d);
+
+        var d = new Date();
+        var n = d.getTime();
+
+        var hour = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.seconds();
+        document.write(hour + ":" + minutes + ":" + seconds + ":")
+
+
+
+    </script>
+
+    <button onclick="clearInterval(clock)">click me</button><br>
+    <p id="showclock"></p>
+    <script>
+        var clock = setInterval(clocktiming, 1000)
+        function clocktiming() {
+            var d = new Date();
+            var vari = d.toLocaleTimeString();
+            document.getElementById('showclock').innerHTML = vari;
+        }
+    </script>
+    <!-- <button onclick="clearInterval(d)">click</button>
+    <script>
+        var d = setTimeout(showalert , 3000)
+                 function showalert(){
+                    alert(" a message!")
+                 }
+
+         -->
+    <script>
+        var x = 10;
+        var y = 20;
+        var a = eval("x + y");
+        var b = eval("x * y");
+
+        var res = a + b;
+        document.write(res);
+
+    </script>
+</body>
+
+</html>

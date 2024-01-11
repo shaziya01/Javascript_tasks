@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+
+        <button type="button" value="+" onclick="add()">+</button>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+        <option value="%">%</option>
+
+    <input type="text" id="result">
+
+</body>
+
+<script>
+    function add(){
+        var num1=parseInt(document.getElementById('num1').value);
+        var num2=parseInt(document.getElementById('num2').value);
+         var c=num1+num2;
+        document.getElementById('result').innerText=c;
+
+    }
+</script>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <input type="text" id="n1">
+        <input type="text" id="n2">
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button type="button" onclick="answer()">=</button>
+        <input type="text" id="result">
+        <script>
+            function answer() {
+                var a = parseInt(document.getElementById('n1').value);
+                var b = parseInt(document.getElementById('n2').value);
+                var c = document.getElementById('operators').value;
+                if (c === '+') {
+                    document.getElementById('result').value = a + b;
+                }
+                if (c === '-') {
+                    document.getElementById('result').value = a - b;
+                } if (c === '*') {
+                    document.getElementById('result').value = a * b;
+                } if (c === '/') {
+                    document.getElementById('result').value = a / b;
+                }
+            }
+        </script>
+    </body>
+</html>

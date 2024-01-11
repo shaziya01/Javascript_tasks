@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calci">
+
+        num1: <input type="text" name="num1">
+    </br>
+    num2: <input type="text" name="num2">
+</br>
+result : <input type="text" name="result">
+</br>
+ 
+<input type="button" value="result" onclick="sum()">
+    </form>
+
+    <script>
+        function sum(){
+            var num1, num2, result;
+            num1 =Number(document.calci.num1.value);
+            num2 =Number(document.calci.num2.value);
+            result = num1 + num2;
+            document.calci.result.value = result;
+        }
+    </script>
+
+    <script>
+        // Create an array of numbers
+const numbers = [12, 5, 34, 22, 8, 19, 42, 7];
+
+// Initialize a variable to store the maximum number, assuming the first number is the maximum
+let maxNumber = numbers[0];
+
+// Iterate through the array to find the maximum number
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > maxNumber) {
+        maxNumber = numbers[i];
+    }
+}
+
+// Print the maximum number
+console.log("The maximum number is: " + maxNumber);
+document.write(maxNumber)
+
+    </script>
+
+    <script>
+        var array1 = [3,5,6,7,6,54,23,];
+
+        let maxnumb = array1[0];
+
+        for(i = 1; i < array1.length; i++){
+            if (array1[i] < maxnumb){
+                maxnumb = array1[i];
+            }
+        }
+    document.write(maxnumb)
+    </script>
+</body>
+</html>

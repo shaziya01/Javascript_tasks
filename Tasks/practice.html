@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java practice</title>
+    <link rel="stylesheet" href="practice.js">
+</head>
+
+<body>
+     <h1>Welcome you all </h1>
+    <input type="text" id="fruits">
+    <button onclick="my_func()">Enter</button>
+    <script>
+
+        function my_func(){
+            var a = document.getElementById("fruits").value;
+
+            switch(a){
+                case "apple":
+                    document.write("apple");
+                    break;
+                case "banana":
+                    document.write("banana");
+                    break;
+                case "orange":
+                    document.write("orange");
+                    break;
+                default:
+                    document.write("not good for")
+            }
+        } 
+
+
+       document.write("This is shaziya shaikh");
+
+        var a = 10;
+
+         document.write(a);
+         var a = 20;
+         document.write(a);
+         document.write("<br>")
+         const array = ['shaziya', 'shaan', 'sonu']
+         document.write(array)
+         document.write("<br>")
+
+         const fish = ["Lion", , "Angel"];
+         document.write(fish)
+         console.log(fish)
+         document.write("<br>")
+
+         const myList = [
+   "home",
+   "school",
+  "hospital",
+ ];
+
+
+</script>
+
+<script>
+  var array1 = [1,2,3,4,5];
+  var array2 = [2,6,12,24]; 
+
+  if (array1 === array2) 
+     document.write("successfully executed.")
+
+</script>
+    
+<button onclick="clearInterval(clock)">click here</button>
+<p id="showclock"></p>
+<script>
+    var clock = setInterval(clocktiming , 3000)
+    function clocktiming(){
+        var d = new Date();
+        var vari= d.toLocaleDateString();
+        document.getElementById('showclock').innerHTML = vari;
+    }
+
+  
+</script>
+    
+</body>
+
+</html>

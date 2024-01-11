@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_value1">
+    <br>
+    <!-- <input type="text" id="input_value2"> -->
+    <br>
+    <br> 
+    <button type="button" onclick="calculate()">Result</button>
+    <br>
+    <div id="result"></div>
+</body>
+
+<script>
+   function calculate(){
+        number=document.getElementById('input_value1').value
+        html=''
+        for(let i=1;i<=10;i++){
+            result=i*number
+            html+=`<h3>${result}</h3>`
+            // console.log(i*number)
+        }
+        document.getElementById('result').innerHTML=html
+
+    }
+
+//    function calculate(){
+//         number1=document.getElementById('input_value1').value
+//         // number2=document.getElementById('input_value2').value
+//        c=parseInt(number1)+parseInt(number2)
+//         document.getElementById('result').innerText=c
+
+//     }
+
+</script>
+
+</html>
